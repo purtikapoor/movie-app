@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView android:id="@+id/image_view_poster"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/posterImage"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view_poster"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/card_margin"
+            android:textColor="@color/primaryText"
+            android:textSize="@dimen/textSizeSmall" />
+
+        <TextView
+            android:id="@+id/text_view_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_title"
+            android:text="Language"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:textColor="@color/secondaryText"
+            android:textSize="@dimen/textSizeXSmall" />
+
+
+
+            <TextView
+                android:id="@+id/text_view_vote_average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/paddingTextView"
+                android:drawablePadding="@dimen/paddingTextView"
+                android:layout_below="@+id/text_view_language"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_corner"
+                android:text ="2.5"
+                android:drawableLeft="@drawable/ic_star_white_18dp"
+                android:textSize="@dimen/textSizeXSmall" />
+
+            <ImageView android:id="@+id/image_view_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_language"
+                android:layout_alignParentEnd="true"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>
