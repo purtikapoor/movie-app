@@ -7,10 +7,11 @@ import android.view.ViewGroup;
 import androidx.paging.PagedListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.my.movieapp.ui.ItemClickListener;
-import com.my.movieapp.network.NetworkState;
 import com.my.movieapp.R;
 import com.my.movieapp.database.Movie;
+import com.my.movieapp.database.MovieDatabase;
+import com.my.movieapp.network.NetworkState;
+import com.my.movieapp.ui.ItemClickListener;
 import com.my.movieapp.ui.holder.MovieViewHolder;
 import com.my.movieapp.ui.holder.NetworkStateItemViewHolder;
 
@@ -44,6 +45,7 @@ public class MovieAdapter extends PagedListAdapter<Movie, RecyclerView.ViewHolde
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         switch (getItemViewType(position)) {
             case R.layout.movie_item:
+
                 ((MovieViewHolder) holder).bindTo(getItem(position));
                 break;
             case R.layout.network_state_item:

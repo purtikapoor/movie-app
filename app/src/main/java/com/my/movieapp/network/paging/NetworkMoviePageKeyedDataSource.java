@@ -6,24 +6,23 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 import androidx.paging.PageKeyedDataSource;
 
+import com.my.movieapp.database.Movie;
+import com.my.movieapp.network.GetDataService;
 import com.my.movieapp.network.MovieJsonDeserializer;
 import com.my.movieapp.network.NetworkState;
 import com.my.movieapp.network.RetrofitClientInstance;
-import com.my.movieapp.database.Movie;
-import com.my.movieapp.network.GetDataService;
 
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
-
-
-import static com.my.movieapp.Constants.API_KEY;
-import static com.my.movieapp.Constants.LANGUAGE;
-import static com.my.movieapp.Constants.MOVIE_ARRAY_LIST_CLASS_TYPE;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import rx.subjects.ReplaySubject;
+
+import static com.my.movieapp.Constants.API_KEY;
+import static com.my.movieapp.Constants.LANGUAGE;
+import static com.my.movieapp.Constants.MOVIE_ARRAY_LIST_CLASS_TYPE;
 
 public class NetworkMoviePageKeyedDataSource extends PageKeyedDataSource<String, Movie> {
 

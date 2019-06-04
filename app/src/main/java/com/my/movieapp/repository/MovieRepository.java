@@ -33,8 +33,8 @@ public class MovieRepository {
         // when we get new movies from net we set them into the database
         liveDataMerger = new MediatorLiveData<>();
         liveDataMerger.addSource(network.getPagedMovies(), value -> {
-            liveDataMerger.setValue(value);
-            Log.d(TAG, value.toString());
+            liveDataMerger.setValue(value); //I have changed this
+            Log.d(TAG+" 123", value.toString());
         });
 
         // save the movies into db

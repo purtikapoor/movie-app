@@ -1,20 +1,15 @@
 package com.my.movieapp.ui.holder;
 
-import android.app.Application;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.my.movieapp.Constants;
-import com.my.movieapp.database.MovieDatabase;
-import com.my.movieapp.ui.ItemClickListener;
 import com.my.movieapp.R;
 import com.my.movieapp.database.Movie;
+import com.my.movieapp.ui.ItemClickListener;
 import com.squareup.picasso.Picasso;
-
-import java.util.Locale;
 
 import static com.my.movieapp.Constants.SMALL_IMAGE_URL_PREFIX;
 
@@ -51,7 +46,10 @@ public class MovieViewHolder extends RecyclerView.ViewHolder implements View.OnC
 
         if(movie.getIsFavourite()) {
             imageViewFavourite.setImageResource(R.drawable.ic_favorite_red_18dp);
+        }else{
+            imageViewFavourite.setImageResource(0);
         }
+
         if(movie.getPosterPath() != null) {
             String poster = SMALL_IMAGE_URL_PREFIX + movie.getPosterPath();
             Picasso.get().load(poster).placeholder(R.drawable.ic_image_place_holder).into(imageViewPoster);

@@ -1,7 +1,6 @@
 package com.my.movieapp.database;
 
 
-import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
@@ -18,6 +17,10 @@ public interface MovieDao {
 
     @Query("SELECT * FROM movie WHERE id = :id")
     Movie getMovieById(Integer id);
+
+    @Query("SELECT is_favourite FROM movie WHERE id = :id")
+    boolean getIsFavouriteFromDb(Integer id);
+
 
     /**
      * Updating isFavourite

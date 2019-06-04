@@ -3,7 +3,6 @@ package com.my.movieapp.network.paging;
 import androidx.lifecycle.MutableLiveData;
 import androidx.paging.DataSource;
 
-
 import com.my.movieapp.database.Movie;
 
 import rx.subjects.ReplaySubject;

@@ -14,10 +14,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.my.movieapp.Constants;
-import com.my.movieapp.view_model.MovieDetailsViewModel;
 import com.my.movieapp.R;
-
 import com.my.movieapp.databinding.MovieDetailsBinding;
+import com.my.movieapp.view_model.MovieDetailsViewModel;
 import com.squareup.picasso.Picasso;
 
 import static com.my.movieapp.Constants.BIG_IMAGE_URL_PREFIX;

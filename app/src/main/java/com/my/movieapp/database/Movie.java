@@ -1,7 +1,5 @@
 package com.my.movieapp.database;
 
-import android.util.Log;
-
 import androidx.annotation.NonNull;
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
@@ -11,13 +9,10 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverters;
 
-
 import com.google.gson.annotations.SerializedName;
 import com.my.movieapp.Constants;
 import com.my.movieapp.DataConverter;
 
-import org.parceler.Parcel;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity(tableName = "movie")

@@ -1,7 +1,6 @@
 package com.my.movieapp.ui.view;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +13,12 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.my.movieapp.ui.ItemClickListener;
-import com.my.movieapp.view_model.MovieDetailsViewModel;
-import com.my.movieapp.view_model.MovieListViewModel;
 import com.my.movieapp.R;
 import com.my.movieapp.database.Movie;
+import com.my.movieapp.ui.ItemClickListener;
 import com.my.movieapp.ui.adapter.MovieAdapter;
+import com.my.movieapp.view_model.MovieDetailsViewModel;
+import com.my.movieapp.view_model.MovieListViewModel;
 
 
 public class MoviesListFragment extends Fragment implements ItemClickListener {

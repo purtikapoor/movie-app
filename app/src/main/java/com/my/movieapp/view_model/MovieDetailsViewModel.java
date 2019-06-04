@@ -9,18 +9,14 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
-import androidx.room.Database;
 
 import com.my.movieapp.R;
 import com.my.movieapp.database.Genre;
 import com.my.movieapp.database.Movie;
 import com.my.movieapp.database.MovieDatabase;
-import com.my.movieapp.repository.GenreRepository;
 
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.stream.Collectors;

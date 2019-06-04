@@ -14,7 +14,6 @@ import androidx.room.TypeConverters;
 import com.my.movieapp.DataConverter;
 import com.my.movieapp.database.paging.MovieDataSourceFactory;
 
-import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 

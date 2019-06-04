@@ -1,8 +1,5 @@
 package com.my.movieapp;
 
-import androidx.databinding.BaseObservable;
-import androidx.databinding.Bindable;
-
 import com.my.movieapp.database.Genre;
 import com.my.movieapp.database.Movie;
 

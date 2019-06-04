@@ -6,8 +6,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.my.movieapp.network.NetworkState;
 import com.my.movieapp.R;
+import com.my.movieapp.network.NetworkState;
 
 public class NetworkStateItemViewHolder extends RecyclerView.ViewHolder {
 

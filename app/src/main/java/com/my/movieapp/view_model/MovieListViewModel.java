@@ -7,12 +7,10 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.paging.PagedList;
 
-import com.my.movieapp.repository.GenreRepository;
-import com.my.movieapp.repository.MovieRepository;
 import com.my.movieapp.database.Movie;
 import com.my.movieapp.network.NetworkState;
-
-import java.util.ArrayList;
+import com.my.movieapp.repository.GenreRepository;
+import com.my.movieapp.repository.MovieRepository;
 
 public class MovieListViewModel extends AndroidViewModel {
     private MovieRepository repository;
